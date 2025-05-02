@@ -15,6 +15,9 @@ html {
     background-color: var(--primary-color);
     color: var(--secondary-color);
 }
+a:hover {
+    opacity: 0.5;
+}
 .container {
     margin: 0 auto;
     width: 90%;
@@ -153,12 +156,20 @@ html {
 /* PROMO STYLES */
 .promo {
     background: url('images/bg/promo_bg.jpg') center right / cover no-repeat;
+    
 }
 .promo__wrapper {
     width: 50%;
+    opacity: 0;
+    
     @media screen and (width < 769px) {
         width: 90%;
     }
+}
+.promo__wrapper.visible {
+    transition: opacity 3s ease-in;
+    opacity: 1.0;
+    
 }
 
 .promo__title {
@@ -528,4 +539,7 @@ html {
 }
 .button__footer {
     padding: 30px 50px;
+}
+.button.color-change:hover {
+    background-color: rgba(0, 155, 176, 0.8);
 }
