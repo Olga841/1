@@ -12,20 +12,34 @@
   <body>
     <header class="header">
         <div class="header__wrapper">
+            <div class="burger">
+                <button class="burger-menu active" id="burger-menu">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </button>
+                <nav class="burger__nav active" id="menu">
+                    <ul class="burger__nav-list active"> 
+                        <li class="header__nav-item"><a href="#">about Lorem</a></li>
+                        <li class="header__nav-item"><a href="#">catalogs</a></li>
+                        <li class="header__nav-item"><a href="#">contacts</a></li>
+                    </ul>
+                </nav>
+            </div>
             <div class="container">
                 <div class="header__container">
                     <img src="images/icons/contacts/Lorem.svg" alt="" class="header__logo">
                     <nav class="header__nav">
-                        <ul class="header__nav-list">
-                            <li class="header__nav-item"><a href="#">about Lorem</a><li/>
+                        <ul class="header__nav-list active"> 
+                            <li class="header__nav-item"><a href="#">about Lorem</a></li>
                             <li class="header__nav-item"><a href="#">catalogs</a></li>
                             <li class="header__nav-item"><a href="#">contacts</a></li>
-                        </a<>
+                        </ul>
                     </nav>
                 </div>
             </div>
         </div>
-    </div>
+    </header>
     <section class="promo">
         <div class="promo__wrapper">
             <div class="container">
@@ -56,7 +70,7 @@
     <section class="info">
         <div>
            <div class="info__wrapper">
-            <img src="images/bg/info_1.jpg" alt="lorem" class="info__img">
+            <div class="info__data info__data_1"></div>
             <div class="info__data">
                 <ul class="info__list">
                     <li class="info__item">
@@ -81,7 +95,7 @@
                 </ul>
                 <button class="button button__info">ORDER NOW</button>
             </div>
-            <img src="images/bg/info_3.png" alt="" class="info__img">
+            <div class="info__data info__data_3"></div>
            </div>
         </div>
     </section>
